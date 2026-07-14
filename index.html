@@ -1,1 +1,94 @@
-# zhulizixi
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zhuli Zhu - designer, user researcher and creative problem solver.">
+  <title>Zhuli Zhu - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+  <style>
+    /* Add your licensed BBH Hegarty font files to /fonts, then uncomment these rules.
+    @font-face { font-family: "BBH Hegarty"; src: url("fonts/BBH-Hegarty-Regular.woff2") format("woff2"); font-weight: 400; }
+    @font-face { font-family: "BBH Hegarty"; src: url("fonts/BBH-Hegarty-Bold.woff2") format("woff2"); font-weight: 700; }
+    */
+    :root { --yellow: #ffe100; --ink: #292929; --paper: #f7f6f3; --footer: #e3e2df; --placeholder: #d9d9d9; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: Karla, Arial, sans-serif; }
+    a { color: inherit; }
+    .display { font-family: "BBH Hegarty", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-weight: 900; letter-spacing: -.075em; line-height: .82; text-transform: uppercase; }
+    .site-header { height: 12.7vw; min-height: 84px; padding: 2.8vw 3.6vw; display: flex; align-items: flex-start; justify-content: space-between; background: var(--yellow); }
+    .wordmark, .linkedin-mark { text-decoration: none; font-family: "BBH Hegarty", Impact, sans-serif; font-weight: 900; letter-spacing: -.08em; line-height: .7; }
+    .wordmark { font-size: clamp(2.8rem, 5vw, 7rem); }
+    .linkedin-mark { font-family: Arial, sans-serif; font-size: clamp(3rem, 4vw, 5.8rem); font-weight: 900; letter-spacing: -.12em; }
+    .hero { min-height: 37vw; padding: 9vw 9.8vw 0; background: var(--yellow); overflow: hidden; }
+    .hero-title { margin: 0; font-size: clamp(5.5rem, 17.4vw, 25rem); white-space: nowrap; transform: translateX(-.07em); }
+    .hero-title span { color: var(--yellow); -webkit-text-stroke: 0.025em var(--ink); paint-order: stroke fill; }
+    .intro { padding: 15vw 10vw 13vw; display: grid; grid-template-columns: 31% 1fr; gap: 10%; }
+    .about-title { color: var(--yellow); font-size: clamp(4.5rem, 9vw, 13rem); }
+    .about-title small { display: block; margin-top: .12em; color: var(--paper); -webkit-text-stroke: 2px var(--ink); font-family: "BBH Hegarty", Impact, sans-serif; font-size: .2em; letter-spacing: -.07em; line-height: .9; text-align: center; }
+    .bio { max-width: 970px; font-size: clamp(1.5rem, 2.45vw, 3.8rem); line-height: 1.13; letter-spacing: -.03em; }
+    .bio p { margin: 0 0 1.4em; }
+    .projects { padding: 0 11.5vw 12vw; }
+    .archive { margin: 0 0 8vw; color: var(--yellow); font-size: clamp(5rem, 12vw, 18rem); }
+    .project { display: grid; grid-template-columns: 60% 1fr; gap: 6%; align-items: start; }
+    .image-slot { min-height: 35vw; background: var(--placeholder); display: grid; place-items: center; color: #777; font-size: .9rem; }
+    /* To use an image later, add: style="background-image:url('YOUR-IMAGE-URL')" and set background-size:cover. */
+    .project-summary { padding-top: 1vw; }
+    .project-kicker { margin: 0 0 1.4em; font-size: clamp(1.65rem, 2.8vw, 4rem); line-height: 1.05; }
+    .project-title { margin: 0 0 .7em; font-size: clamp(3.8rem, 6vw, 9rem); }
+    .project-copy { margin: 0; font-size: clamp(1.35rem, 2vw, 3rem); line-height: 1.28; }
+    .site-footer { padding: 6vw 10vw 5vw; background: var(--footer); font-size: clamp(1.25rem, 1.9vw, 2.6rem); line-height: 1.35; }
+    .site-footer p { margin: 0 0 1.1em; }
+    .site-footer a { text-underline-offset: .14em; }
+    @media (max-width: 700px) {
+      .site-header { height: 100px; padding: 28px 25px; }
+      .hero { min-height: 390px; padding: 140px 8vw 0; }
+      .hero-title { font-size: 25vw; transform: translateX(-.05em); }
+      .intro, .project { grid-template-columns: 1fr; gap: 42px; }
+      .intro { padding: 100px 9vw; }
+      .about-title small { text-align: left; }
+      .projects { padding: 0 9vw 100px; }
+      .archive { margin-bottom: 65px; }
+      .image-slot { min-height: 58vw; }
+      .project-summary { padding: 0; }
+      .site-footer { padding: 70px 9vw; }
+    }
+  </style="background-image:url('https://drive.google.com/file/d/11VbdfXQqgY9k5Y7Qdw6v0tEBpIbTQGkI/view?usp=drive_link')" and set background-size:cover>
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Zhuli home">ZHULI</a>
+    <a class="linkedin-mark" href="https://www.linkedin.com/in/zhulidesign33/" target="_blank" rel="noopener noreferrer" aria-label="Zhuli on LinkedIn">in</a>
+  </header>
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <h1 class="hero-title display">LZIXI<span>(ZHULI)</span><br> ZHU</h1>
+    </section>
+    <section class="intro" aria-labelledby="about-heading">
+      <div><h2 id="about-heading" class="about-title display">ABOUT<br>ME<small>Lizixi Zhū,<br>known as Zhuli/Julie</small></h2></div>
+      <div class="bio">
+        <p>Zhuli is a designer, user researcher and creative problem solver. She graduated with First-Class Honours in Product Design from Central Saint Martins and has experience working in the retail and advertising sectors.</p>
+        <p>She is currently studying Consumer Behaviour at Goldsmiths, bringing an interdisciplinary perspective to her work. By combining design thinking, behaviour science and structured research methodology, she approaches design challenges holistically to deliver strategically informed solutions.</p>
+      </div>
+    </section>
+    <section class="projects" aria-labelledby="archive-heading">
+      <h2 id="archive-heading" class="archive display">ARCHIVE</h2>
+      <article class="project">
+        <div class="image-slot" role="img" aria-label="Project image placeholder">IMAGE PLACEHOLDER</div>
+        <div class="project-summary">
+          <p class="project-kicker">A faster checkout<br>experience for all.</p>
+          <h3 class="project-title display">MY<br>CHECKOUT</h3>
+          <p class="project-copy">Use human-centred design to reducing friction and retail loss for self-checkout systems</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Lizixi (Zhuli) Zhu</p>
+    <p>Email: <a href="mailto:zhulizixjulie@outlook.com">zhulizixjulie@outlook.com</a><br>Mobile Number: <a href="tel:+447450630583">+44 7450630583</a><br><a href="https://www.linkedin.com/in/zhulidesign33/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+  </footer>
+</body>
+</html>
