@@ -50,3 +50,57 @@ Object.entries(IMAGE_PLACEHOLDERS).forEach(([key, url]) => {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 //（注：内容由AI生成）
+
+// ====================================================
+// MyCheckout page animations
+// ====================================================
+
+// Page fade in
+document.body.style.opacity = "0";
+
+window.addEventListener("load", () => {
+  document.body.style.transition = "opacity 0.6s ease";
+  document.body.style.opacity = "1";
+});
+
+// Reveal sections when scrolling
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+      }
+    });
+  },
+  {
+    threshold: 0.12,
+    rootMargin: "0px 0px -60px 0px",
+  }
+);
+
+document
+  .querySelectorAll(".case-section:not(.case-hero)")
+  .forEach((section) => revealObserver.observe(section));
+
+// Smooth page transition when navigating
+document.querySelectorAll("a[href]").forEach((link) => {
+  const href = link.getAttribute("href");
+
+  if (
+    href &&
+    !href.startsWith("#") &&
+    !href.startsWith("mailto:") &&
+    !href.startsWith("tel:") &&
+    !link.hasAttribute("target")
+  ) {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      document.body.style.opacity = "0";
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 250);
+    });
+  }
+});
