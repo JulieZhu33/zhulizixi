@@ -30,6 +30,15 @@ const IMAGE_PLACEHOLDERS = {
   ideation: "",
   "testing-1": "",
   "testing-2": "",
+  // headpadel.html — REPLAY case-study images
+  "head-brand": "",
+  "head-hero": "",
+  "head-solution": "",
+  "head-touchpoints": "",
+  "head-touchpoint-1": "",
+  "head-touchpoint-2": "",
+  "head-touchpoint-3": "",
+  "head-touchpoint-4": "",
 };
 
 Object.entries(IMAGE_PLACEHOLDERS).forEach(([key, url]) => {

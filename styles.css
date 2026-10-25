@@ -124,3 +124,28 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
   .result-card strong { font-size: 3rem; }
 }
 /* （注：内容由AI生成） */
+
+/* HEAD Padel — REPLAY case study */
+.head-padel { color: #101010; }
+.head-hero { display: grid; grid-template-columns: minmax(20rem, .85fr) minmax(34rem, 1.35fr); gap: 4rem; min-height: 51.25rem; align-items: start; }
+.head-hero__copy { display: flex; min-height: 43.7rem; flex-direction: column; align-items: flex-start; }
+.head-brand-image { width: 9.375rem; height: 9.375rem; margin-bottom: auto; }
+.head-hero h1 { margin: 0; color: #2376bc; font: italic 700 clamp(5rem, 9vw, 8rem)/.92 Montserrat, sans-serif; letter-spacing: -.08em; }
+.head-hero__copy > p { max-width: 49.6rem; margin: 2.25rem 0 0; font: 400 clamp(1.35rem, 2vw, 2rem)/1 Karla, sans-serif; }
+.head-hero-image { width: 100%; height: 43.7rem; }
+.head-brief { padding-top: 4.5rem; }
+.head-brief > .case-label { margin-bottom: 4.5rem; }
+.head-intro, .head-body { width: 100%; max-width: none; margin: 0; font: 400 1.25rem/1.4 Karla, sans-serif; }
+.head-market { display: grid; gap: 3.25rem; margin-top: 5.5rem; }
+.head-market h2 { margin: 0 0 1.25rem; color: #101010; font: 500 1.5rem/1.2 Montserrat, sans-serif; text-transform: uppercase; }
+.head-market p { margin: 0; font: 400 1.25rem/1.4 Karla, sans-serif; }
+.head-strengths { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.35rem; }
+.head-strengths article { display: grid; min-height: 14.7rem; place-items: center; padding: 2rem; border-radius: .95rem; background: #cbe1f3; text-align: center; font: 400 1.25rem/1.25 Karla, sans-serif; }
+.head-solution { padding-top: 7.5rem; }
+.head-solution > .case-label, .head-touchpoints > .case-label { margin-bottom: 4.5rem; }
+.head-wide-image { display: block; width: 100%; height: min(52vw, 50rem); margin-top: 4.25rem; }
+.head-touchpoints { padding-top: 4.5rem; }
+.head-touchpoints-image { height: min(53vw, 51.1rem); }
+.head-touchpoint-slots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem 4.75rem; margin-top: 3rem; }
+.head-touchpoint-slots .case-image { width: 100%; height: 9.3125rem; }
+@media (max-width: 700px) { .head-hero { grid-template-columns: 1fr; gap: 2rem; min-height: auto; }.head-hero__copy { min-height: auto; }.head-brand-image { margin-bottom: 5rem; }.head-hero h1 { font-size: clamp(4.5rem, 21vw, 7rem); }.head-hero__copy > p { font-size: 1.35rem; }.head-hero-image { height: 25rem; }.head-brief, .head-solution, .head-touchpoints { padding-top: 4.5rem; }.head-brief > .case-label, .head-solution > .case-label, .head-touchpoints > .case-label { margin-bottom: 2.5rem; }.head-market { margin-top: 4rem; }.head-strengths, .head-touchpoint-slots { grid-template-columns: 1fr; gap: 1rem; }.head-strengths article { min-height: 10rem; }.head-wide-image, .head-touchpoints-image { height: 25rem; }.head-touchpoint-slots .case-image { height: 10rem; } }
