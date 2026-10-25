@@ -28,7 +28,8 @@ const IMAGE_PLACEHOLDERS = {
   "research-1": "",
   "research-2": "",
   ideation: "",
-  testing: "",
+  "testing-1": "",
+  "testing-2": "",
 };
 
 Object.entries(IMAGE_PLACEHOLDERS).forEach(([key, url]) => {
