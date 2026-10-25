@@ -25,8 +25,8 @@
           <p class="case-tagline">A faster checkout experience for all.</p>
           <p>Reducing friction and retail loss for self-checkout systems.</p>
         </div>
-        <!-- Replace the empty src with your MyCheckout hero image URL. -->
-        <img class="case-image case-image--hero" src="" alt="" />
+        <!-- Hero image: paste your link into script.js → IMAGE_PLACEHOLDERS["hero"] (or directly into src=""). -->
+        <img class="case-image case-image--hero" data-image="hero" src="" alt="" />
       </section>
 
       <section class="case-section case-brief-refined">
@@ -39,10 +39,10 @@
         </div>
 
         <div class="brief-brand-images" aria-label="Project and partner images">
-          <!-- Replace the empty src with your first brand image URL. -->
-          <img class="case-image case-image--brand case-image--brand-wide" src="" alt="" />
-          <!-- Replace the empty src with your second brand image URL. -->
-          <img class="case-image case-image--brand" src="" alt="" />
+          <!-- Brand image 1: script.js → IMAGE_PLACEHOLDERS["brand-wide"]. -->
+          <img class="case-image case-image--brand case-image--brand-wide" data-image="brand-wide" src="" alt="" />
+          <!-- Brand image 2: script.js → IMAGE_PLACEHOLDERS["brand"]. -->
+          <img class="case-image case-image--brand" data-image="brand" src="" alt="" />
         </div>
 
         <div class="brief-question-wrap">
@@ -52,8 +52,8 @@
         <p class="case-label brief-solution-label">SOLUTION</p>
         <p class="case-body brief-body">MyCheckout allows shoppers registered with a loyalty programme to pre-set default checkout settings at home. By using the API technology in the existing loyalty programme, shoppers can skip selecting checkout options when they tap their loyalty card to activate those default settings.</p>
 
-        <!-- Replace the empty src with your MyCheckout solution image URL. -->
-        <img class="case-image case-image--wide brief-solution-image" src="" alt="" />
+        <!-- Solution image: script.js → IMAGE_PLACEHOLDERS["solution"]. -->
+        <img class="case-image case-image--wide brief-solution-image" data-image="solution" src="" alt="" />
 
         <p class="case-label co-benefits-label">CO-BENEFITS</p>
 
@@ -80,29 +80,97 @@
 
       <section class="case-section case-touchpoints">
         <p class="case-label">TOUCHPOINTS</p>
-        <article class="touchpoint touchpoint--loyalty"><h2>Loyalty app interface design</h2><p>The function is integrated into the existing supermarket app, where shoppers customise their carrier-bag, payment, receipt, and accessibility default settings before their next self-checkout.</p><!-- Replace the empty src with your loyalty-app image URL. --><img class="case-image case-image--touchpoint" src="" alt="" /></article>
+        <article class="touchpoint touchpoint--loyalty"><h2>Loyalty app interface design</h2><p>The function is integrated into the existing supermarket app, where shoppers customise their carrier-bag, payment, receipt, and accessibility default settings before their next self-checkout.</p><!-- Loyalty app image: script.js → IMAGE_PLACEHOLDERS["loyalty-app"]. --><img class="case-image case-image--touchpoint" data-image="loyalty-app" src="" alt="" /></article>
         <div class="touchpoint-grid">
-          <article class="touchpoint"><h2>New service activations</h2><p>In-store touchpoints at the self-checkout zone promote the new service.</p><div class="touchpoint-image-row"><!-- Paste activation image URL 1 below. --><img class="case-image case-image--tile" src="" alt="" /><!-- Paste activation image URL 2 below. --><img class="case-image case-image--tile" src="" alt="" /></div></article>
-          <article class="touchpoint"><h2>Self-checkout interface design</h2><p>Saved preferences are applied automatically when the user scans their loyalty card.</p><div class="touchpoint-image-row"><!-- Paste self-checkout image URL 1 below. --><img class="case-image case-image--tile" src="" alt="" /><!-- Paste self-checkout image URL 2 below. --><img class="case-image case-image--tile" src="" alt="" /></div></article>
+          <article class="touchpoint"><h2>New service activations</h2><p>In-store touchpoints at the self-checkout zone promote the new service.</p><div class="touchpoint-image-row"><!-- Activation image 1: script.js → IMAGE_PLACEHOLDERS["activation-1"]. --><img class="case-image case-image--tile" data-image="activation-1" src="" alt="" /><!-- Activation image 2: script.js → IMAGE_PLACEHOLDERS["activation-2"]. --><img class="case-image case-image--tile" data-image="activation-2" src="" alt="" /></div></article>
+          <article class="touchpoint"><h2>Self-checkout interface design</h2><p>Saved preferences are applied automatically when the user scans their loyalty card.</p><div class="touchpoint-image-row"><!-- Self-checkout image 1: script.js → IMAGE_PLACEHOLDERS["selfcheckout-1"]. --><img class="case-image case-image--tile" data-image="selfcheckout-1" src="" alt="" /><!-- Self-checkout image 2: script.js → IMAGE_PLACEHOLDERS["selfcheckout-2"]. --><img class="case-image case-image--tile" data-image="selfcheckout-2" src="" alt="" /></div></article>
         </div>
       </section>
 
-      <section class="case-section">
+      <section class="case-section case-feedback">
         <p class="case-label">RETAIL SPECIALIST FEEDBACK</p>
-        <blockquote>“In 2025, changes to regulations on digital equipment are coming and they are wide-reaching. This is a positive way of doing that.”</blockquote>
+        <span class="feedback-rule" aria-hidden="true"></span>
+        <blockquote class="feedback-quote">In 2025 changes to regulations on digital equipment is coming and it is wide reaching. This is a positive way of doing that.”</blockquote>
+        <blockquote class="feedback-quote feedback-quote--long">We just launched a large online platform. There's possibility of using everything that is saved on you Loyalty setting also as an online option. A design like this would promote the online channel. I see this as something we should aim for as I see this as the next logical step - to launch something like that. We are quite big on Loyalty, what we know in terms of shrinkage is that our Loyalty customers produce less shrinkage.”</blockquote>
         <div class="image-row image-row--three">
-          <!-- Replace each empty src with a feedback image URL. -->
-          <img class="case-image case-image--feedback" src="" alt="" /><img class="case-image case-image--feedback" src="" alt="" /><img class="case-image case-image--feedback" src="" alt="" />
+          <!-- Feedback images: script.js → IMAGE_PLACEHOLDERS["feedback-1"], ["feedback-2"], ["feedback-3"]. -->
+          <img class="case-image case-image--feedback" data-image="feedback-1" src="" alt="" />
+          <img class="case-image case-image--feedback" data-image="feedback-2" src="" alt="" />
+          <img class="case-image case-image--feedback" data-image="feedback-3" src="" alt="" />
         </div>
       </section>
 
       <section class="case-section case-process">
         <p class="case-label">PROCESS</p>
-        <div class="process-block"><h2>Research</h2><p>What do consumers like about self-checkout? Field research at retailers informed the opportunity.</p><!-- Replace the empty src with your research chart or image URL. --><img class="case-image case-image--process" src="" alt="" /></div>
-        <div class="process-block"><h2>Insights</h2><p>Convenience, speed, privacy, and a feeling of control are central to a positive self-checkout experience.</p></div>
-        <div class="process-block"><h2>Ideation</h2><!-- Replace the empty src with your ideation image URL. --><img class="case-image case-image--process" src="" alt="" /></div>
-        <div class="process-block"><h2>Testing</h2><p>21 regular self-checkout users completed standard and MyCheckout routes using a clickable prototype.</p><!-- Replace the empty src with your testing image URL. --><img class="case-image case-image--process" src="" alt="" /></div>
-        <div class="test-results"><p>100% of participants noticed the customised checkout route was faster than the standard route.</p><p><strong>−10s</strong> average time saved with the clickable prototype.</p></div>
+
+        <div class="process-step">
+          <h2>Research</h2>
+          <div class="research-row">
+            <div class="research-item">
+              <p class="research-item__title">What do consumers like about self-checkout?</p>
+              <!-- Research image 1: script.js → IMAGE_PLACEHOLDERS["research-1"]. -->
+              <img class="case-image case-image--research" data-image="research-1" src="" alt="" />
+            </div>
+            <div class="research-item">
+              <p class="research-item__title">Field research at retailers</p>
+              <!-- Research image 2: script.js → IMAGE_PLACEHOLDERS["research-2"]. -->
+              <img class="case-image case-image--research" data-image="research-2" src="" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <h2>Insights</h2>
+          <div class="insight-row">
+            <span class="insight-tag">General shoppers behavioural statistics</span>
+            <div class="insight-cards">
+              <p class="insight-card">Shoppers choose SCO to checkout as they think SCO is faster than the cashier assisted checkout</p>
+              <p class="insight-card">Shoppers who use SCO usually have a small basket of items</p>
+              <p class="insight-card">SCO allows shoppers to control their own pace, giving them a greater sense of autonomy and control</p>
+              <p class="insight-card">Minimum checkout time spent is 6 seconds, Tesco has the most frictionless SCO experience</p>
+              <p class="insight-card">Customers may struggle to use SCO because each supermarket has a different interface</p>
+            </div>
+          </div>
+          <div class="insight-row">
+            <span class="insight-tag">Frictions</span>
+            <div class="insight-cards">
+              <p class="insight-card">Subjective feeling of long waiting time at peak hours such as lunch time and after work</p>
+              <p class="insight-card">Feeling unfair when having to queue behind shoppers with a large basket</p>
+              <p class="insight-card">Frequent staff interventions still required (i.e. verifying age, weight alert)</p>
+              <p class="insight-card">Shoppers feel under surveillance</p>
+              <p class="insight-card">Scanning loyalty cards, selecting numbers of bag and a payment method can add extra few seconds to the checkout</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <h2>Ideation</h2>
+          <!-- Ideation image: script.js → IMAGE_PLACEHOLDERS["ideation"]. -->
+          <img class="case-image case-image--process" data-image="ideation" src="" alt="" />
+        </div>
+
+        <div class="process-step">
+          <h2>Testing</h2>
+          <div class="testing-grid">
+            <div class="testing-copy">
+              <p>21 participants who use SCO regularly were recruited to conduct a within-subject testing using a clickable Figma prototype with other props simulating the SCO experience.</p>
+              <p>Each participant would complete two routes at random order - standard and new proposed idea (MyCheckout).</p>
+            </div>
+            <!-- Testing image: script.js → IMAGE_PLACEHOLDERS["testing"]. -->
+            <img class="case-image case-image--testing" data-image="testing" src="" alt="" />
+          </div>
+        </div>
+
+        <div class="test-results">
+          <div class="result-card">
+            <strong>100%</strong>
+            <p>participants noticed the customised checkout route is faster than the standard</p>
+          </div>
+          <div class="result-card">
+            <strong>−10s</strong>
+            <p>with the clickable prototype participants save an average of 10 seconds to complete a self-checkout</p>
+          </div>
+        </div>
       </section>
     </main>
 
