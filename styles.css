@@ -156,3 +156,72 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .case-hero__copy .case-kicker { margin-top: auto; }
 .case-hero .case-image--hero { position: relative; z-index: 0; }
 @media (max-width: 700px) { .case-hero__copy { display: block; align-self: auto; }.case-hero__copy h1 { position: static; margin: 0; white-space: normal; }.case-hero__copy .case-kicker { margin-top: 0; } }
+
+/* MyCheckout page animation */
+.case-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.case-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero should show immediately */
+.case-hero {
+  opacity: 1;
+  transform: none;
+}
+
+/* Images */
+.case-image {
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.case-image:hover {
+  transform: translateY(-4px);
+}
+
+/* Benefit cards */
+.co-benefit-card,
+.insight-card,
+.result-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.co-benefit-card:hover,
+.insight-card:hover,
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Softer initial hero appearance */
+.case-hero__copy,
+.case-image--hero {
+  animation: heroFadeUp 0.9s ease both;
+}
+
+.case-image--hero {
+  animation-delay: 0.15s;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
