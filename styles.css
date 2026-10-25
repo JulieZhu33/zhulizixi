@@ -60,7 +60,7 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .case-touchpoints > .case-label { margin-bottom: 5.25rem; }
 .case-touchpoints .touchpoint h2 { margin-bottom: 1.6rem; font-size: 1.5rem; }
 .case-touchpoints .touchpoint p { max-width: 52.5rem; font-size: 1.25rem; line-height: 1.35; }
-.case-touchpoints .touchpoint--loyalty { margin-bottom: 3rem; }
+.case-touchpoints .touchpoint--loyalty { margin-bottom: 6.8rem; }
 .case-touchpoints .case-image--touchpoint { width: min(100%, 52.125rem); height: min(38.5vw, 38.5rem); margin-top: 3.5rem; }
 .case-touchpoints .touchpoint-grid { gap: 6.9rem; }
 .case-touchpoints .touchpoint-grid .touchpoint { margin: 0; }
