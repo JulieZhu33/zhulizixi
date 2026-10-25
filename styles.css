@@ -37,10 +37,11 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 
 /* MyCheckout brief-to-co-benefits composition, based on the Figma case-study frame. */
 .case-brief-refined { padding-top: 1.5rem; }
-.brief-heading-row { display: grid; grid-template-columns: minmax(15rem, 1fr) minmax(20rem, 32rem); gap: 2rem; align-items: start; }
-.brief-heading-row .case-label { margin-top: .25rem; }
-.case-stat { margin: 0; max-width: none; font: 400 1.2rem/1.4 Karla, sans-serif; }
-.case-stat p { margin: 0 0 .5rem; }.case-stat cite { font-style: normal; }
+.brief-heading-row { display: block; }
+.brief-heading-row .case-label { margin: 0 0 2rem; }
+.case-stat { margin: 0; max-width: none; font: 400 1.2rem/1.5 Karla, sans-serif; }
+.case-stat p { margin: 0 0 1rem; }
+.case-stat cite { display: block; text-align: right; font-style: normal; font-size: .9rem; }
 .brief-brand-images { display: flex; align-items: center; gap: 1.85rem; min-height: 12rem; padding: 3.2rem 0 2.7rem; }
 .case-image--brand { width: 5.6rem; height: 4.95rem; }.case-image--brand-wide { width: 9.25rem; }
 .brief-question-wrap { display: flex; align-items: center; min-height: 10.7rem; margin: 0 calc(-1 * max(5.7vw, 1.25rem)); padding: 2rem max(5.7vw, 1.25rem); border-radius: 100vw; background: linear-gradient(90deg, #f2f1ee 0%, #fade01 100%); }
