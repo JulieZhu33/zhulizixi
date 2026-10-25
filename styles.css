@@ -37,7 +37,7 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 
 /* MyCheckout brief-to-co-benefits composition, based on the Figma case-study frame. */
 .case-brief-refined { padding-top: 1.5rem; }
-.brief-heading-row { display: block; }
+.brief-heading-row { display: grid; grid-template-columns: 1fr; gap: 2rem; }
 .brief-heading-row .case-label { margin: 0 0 2rem; }
 .case-stat { margin: 0; max-width: none; font: 400 1.2rem/1.5 Karla, sans-serif; }
 .case-stat p { margin: 0 0 1rem; }
