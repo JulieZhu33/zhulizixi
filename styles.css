@@ -150,3 +150,50 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .head-touchpoint-slots .case-image { width: 100%; height: 9.3125rem; }
 @media (max-width: 700px) { .head-hero { grid-template-columns: 1fr; gap: 2rem; min-height: auto; }.head-hero__copy { min-height: auto; }.head-brand-image { margin-bottom: 5rem; }.head-hero h1 { font-size: clamp(4.5rem, 21vw, 7rem); }.head-hero__copy > p { font-size: 1.35rem; }.head-hero-image { width: 100%; height: 25rem; margin-left: 0; }.head-brief, .head-solution, .head-touchpoints { padding-top: 4.5rem; }.head-brief > .case-label, .head-solution > .case-label, .head-touchpoints > .case-label { margin-bottom: 2.5rem; }.head-market { margin-top: 4rem; }.head-strengths, .head-touchpoint-slots { grid-template-columns: 1fr; gap: 1rem; }.head-strengths article { min-height: 10rem; }.head-wide-image, .head-touchpoints-image { height: 25rem; }.head-touchpoint-slots .case-image { height: 10rem; } }
 
+/* ===== Copilot animations ===== */
+
+.case-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.case-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero appears immediately */
+.case-hero {
+  opacity: 1;
+  transform: none;
+}
+
+/* Images */
+.case-image {
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.case-image:hover {
+  transform: translateY(-4px);
+}
+
+/* Cards */
+.co-benefit-card,
+.insight-card,
+.result-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.co-benefit-card:hover,
+.insight-card:hover,
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
