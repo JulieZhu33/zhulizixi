@@ -97,7 +97,7 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .insight-cards { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .9rem; }
 .insight-cards .insight-card { margin: 0; padding: 1.3rem 1.1rem; min-height: 10rem; background: #fff; border-radius: 1rem; font: 400 .95rem/1.35 Karla, sans-serif; }
 .testing-grid { display: grid; grid-template-columns: minmax(18rem, 1.1fr) minmax(16rem, 1fr); gap: 4.5rem; align-items: start; }
-.testing-copy { max-width: 36rem; }
+.testing-copy { max-width: 45rem; }
 .testing-copy p { margin: 0; }
 .testing-copy p + p { margin-top: 1.25rem; }
 .case-image--testing { display: block; width: 100%; height: min(36vw, 34rem); }
