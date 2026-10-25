@@ -103,7 +103,7 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .testing-results { max-width: 103.125rem; margin: 4.75rem auto 0; }
 .testing-results h2 { margin: 0 0 1.9rem; font-size: 1.5rem; }
 .test-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6rem; }
-.result-card { display: flex; flex-direction: column; justify-content: center; min-height: 17rem; padding: 2rem 4.4rem; background: linear-gradient(90deg, #f4db00 0%, rgba(242, 241, 238, 0) 100%); border-radius: 3.125rem; }
+.result-card { display: flex; flex-direction: column; justify-content: center; min-height: 17rem; padding: 2rem 4.4rem; background: linear-gradient(180deg, #f4db00 0%, rgba(242, 241, 238, 0) 100%); border-radius: 3.125rem; }
 .result-card strong { display: block; margin-bottom: 1.15rem; font: 700 4rem/.9 Karla, sans-serif; letter-spacing: -.08em; }
 .result-card p { margin: 0; max-width: 39rem; font: 400 1.25rem/1.25 Karla, sans-serif; }
 
