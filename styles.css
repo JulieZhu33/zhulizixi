@@ -200,3 +200,51 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .research-objectives-grid h2 { margin-bottom: 2rem; color: #2376bc; font: 700 1.25rem/1.2 Montserrat, sans-serif; text-transform: uppercase; }
 .research-objectives-grid li + li { margin-top: .35rem; }
 @media (max-width: 700px) { .head-audience > .case-label::after, .head-research > .case-label::after { width: 3.5rem; }.head-persona { gap: 1.25rem; }.head-persona-image { box-shadow: .5rem .5rem 0 rgba(35, 118, 188, .12); }.head-persona-card dl div { grid-template-columns: 1fr; gap: .35rem; }.research-audience-cards, .research-methods-grid, .research-objectives-grid { gap: 1rem; }.research-methods-grid { margin-top: 1.5rem; }.research-objectives-grid { margin-top: 1rem; }.research-audience-cards article, .research-method-card, .research-objectives-grid article { border-radius: 1.1rem; } }
+
+/* ===== Animations ===== */
+
+.case-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.case-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero appears immediately */
+.case-hero {
+  opacity: 1;
+  transform: none;
+}
+
+/* Images */
+.case-image {
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.case-image:hover {
+  transform: translateY(-4px);
+}
+
+/* Cards */
+.co-benefit-card,
+.insight-card,
+.result-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.co-benefit-card:hover,
+.insight-card:hover,
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
