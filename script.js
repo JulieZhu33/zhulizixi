@@ -50,4 +50,38 @@ Object.entries(IMAGE_PLACEHOLDERS).forEach(([key, url]) => {
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Gentle, one-time section reveals. The page remains fully visible when
+// JavaScript is unavailable or when a visitor prefers reduced motion.
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (!prefersReducedMotion) {
+  const revealTargets = document.querySelectorAll('main > section, .site-footer');
+
+  revealTargets.forEach((target) => {
+    target.dataset.reveal = '';
+  });
+
+  const showTarget = (target) => {
+    target.classList.add('is-revealed');
+  };
+
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            showTarget(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -5% 0px' }
+    );
+
+    revealTargets.forEach((target) => revealObserver.observe(target));
+  } else {
+    revealTargets.forEach(showTarget);
+  }
+}
 //（注：内容由AI生成）

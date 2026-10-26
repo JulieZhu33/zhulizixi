@@ -200,3 +200,72 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .research-objectives-grid h2 { margin-bottom: 2rem; color: #2376bc; font: 700 1.25rem/1.2 Montserrat, sans-serif; text-transform: uppercase; }
 .research-objectives-grid li + li { margin-top: .35rem; }
 @media (max-width: 700px) { .head-audience > .case-label::after, .head-research > .case-label::after { width: 3.5rem; }.head-persona { gap: 1.25rem; }.head-persona-image { box-shadow: .5rem .5rem 0 rgba(35, 118, 188, .12); }.head-persona-card dl div { grid-template-columns: 1fr; gap: .35rem; }.research-audience-cards, .research-methods-grid, .research-objectives-grid { gap: 1rem; }.research-methods-grid { margin-top: 1.5rem; }.research-objectives-grid { margin-top: 1rem; }.research-audience-cards article, .research-method-card, .research-objectives-grid article { border-radius: 1.1rem; } }
+
+/* ── Subtle portfolio motion ───────────────────────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition: opacity .65s ease, transform .65s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  [data-reveal].is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .site-header {
+    animation: header-arrival .55s cubic-bezier(.22, 1, .36, 1) both;
+  }
+
+  .project-card,
+  .case-image,
+  .insight-cards .insight-card,
+  .solution-grid article,
+  .benefit-grid div,
+  .co-benefit-card,
+  .result-card,
+  .head-strengths article,
+  .head-persona-card,
+  .research-audience-cards article,
+  .research-method-card,
+  .research-objectives-grid article,
+  .text-link,
+  .site-header nav a,
+  .site-footer a {
+    transition: transform .25s ease, color .25s ease, background .25s ease, box-shadow .25s ease;
+  }
+
+  .project-card:hover,
+  .project-card:focus-visible,
+  .case-image:hover,
+  .insight-cards .insight-card:hover,
+  .solution-grid article:hover,
+  .benefit-grid div:hover,
+  .co-benefit-card:hover,
+  .result-card:hover,
+  .head-strengths article:hover,
+  .head-persona-card:hover,
+  .research-audience-cards article:hover,
+  .research-method-card:hover,
+  .research-objectives-grid article:hover {
+    transform: translateY(-.15rem);
+    box-shadow: 0 .45rem 1.25rem rgba(24, 31, 37, .09);
+  }
+
+  .text-link:hover,
+  .text-link:focus-visible,
+  .site-header nav a:hover,
+  .site-header nav a:focus-visible,
+  .site-footer a:hover,
+  .site-footer a:focus-visible {
+    transform: translateY(-.12rem);
+  }
+
+  @keyframes header-arrival {
+    from { opacity: 0; transform: translateY(-.8rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
