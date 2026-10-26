@@ -150,6 +150,31 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .head-touchpoint-slots .case-image { width: 100%; height: 9.3125rem; }
 @media (max-width: 700px) { .head-hero { grid-template-columns: 1fr; gap: 2rem; min-height: auto; }.head-hero__copy { min-height: auto; }.head-brand-image { margin-bottom: 5rem; }.head-hero h1 { font-size: clamp(4.5rem, 21vw, 7rem); }.head-hero__copy > p { font-size: 1.35rem; }.head-hero-image { width: 100%; height: 25rem; margin-left: 0; }.head-brief, .head-solution, .head-touchpoints { padding-top: 4.5rem; }.head-brief > .case-label, .head-solution > .case-label, .head-touchpoints > .case-label { margin-bottom: 2.5rem; }.head-market { margin-top: 4rem; }.head-strengths, .head-touchpoint-slots { grid-template-columns: 1fr; gap: 1rem; }.head-strengths article { min-height: 10rem; }.head-wide-image, .head-touchpoints-image { height: 25rem; }.head-touchpoint-slots .case-image { height: 10rem; } }
 
+/* Keep the MyCheckout project title over the top edge of its hero image. */
+.case-hero__copy { position: relative; align-self: stretch; display: flex; flex-direction: column; justify-content: flex-end; }
+.case-hero__copy h1 { position: absolute; z-index: 2; top: 0; left: calc(100% + 4rem); white-space: nowrap; }
+.case-hero__copy .case-kicker { margin-top: auto; }
+.case-hero .case-image--hero { position: relative; z-index: 0; }
+@media (max-width: 700px) { .case-hero__copy { display: block; align-self: auto; }.case-hero__copy h1 { position: static; margin: 0; white-space: normal; }.case-hero__copy .case-kicker { margin-top: 0; } }
+
+/* HEAD Padel — Targeting Audience and Research Methods */
+.head-audience, .head-research { padding-top: 5.1rem; }
+.head-audience > .case-label, .head-research > .case-label { margin-bottom: 4.5rem; }
+.head-persona { display: grid; grid-template-columns: minmax(20rem, .75fr) minmax(32rem, 1.25fr); gap: 1.8rem; }
+.head-persona-image { width: 100%; height: min(44vw, 44.8125rem); }
+.head-persona-card { min-height: min(44vw, 44.8125rem); padding: 5.8rem 10%; border-radius: .95rem; background: #cbe1f3; }
+.head-persona-card h2 { margin: 0 0 4.6rem; color: #2376bc; font: 700 2rem/1 Montserrat, sans-serif; text-transform: uppercase; }
+.head-persona-card dl { display: grid; gap: 1.45rem; margin: 0; font: 400 1.25rem/1.25 Karla, sans-serif; }
+.head-persona-card dl div { display: grid; gap: .4rem; }.head-persona-card dt { font-weight: 700; }.head-persona-card dd { margin: 0; }
+.research-audience-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
+.research-audience-cards article { display: grid; min-height: 12.5rem; align-content: center; padding: 2rem 3rem; border-radius: .95rem; background: #fff; }
+.research-audience-cards p { margin: 0 0 1.25rem; font: 400 1.25rem/1.2 Karla, sans-serif; }.research-audience-cards strong { color: #2376bc; font: 700 2rem/1.15 Karla, sans-serif; }.research-audience-cards strong span { color: #101010; font: 400 1.25rem/1.2 Karla, sans-serif; }
+.research-methods-grid, .research-objectives-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.9rem; margin-top: .8rem; }
+.research-method-card { display: grid; min-height: 12.5rem; align-content: center; padding: 2rem 2.9rem; border-radius: .95rem; background: #cbe1f3; }
+.research-method-card p { margin: 0 0 1rem; font: 400 1.25rem/1.2 Karla, sans-serif; }.research-method-card strong { color: #2376bc; font: 700 2.5rem/1 Karla, sans-serif; }.research-method-card span { margin-top: .35rem; font: 400 1.25rem/1.2 Karla, sans-serif; }
+.research-objectives-grid { margin-top: .8rem; }.research-objectives-grid article { min-height: 22.4rem; padding: 2rem 3rem; border-radius: .95rem; background: #cbe1f3; }.research-objectives-grid h2 { margin: 0 0 1.6rem; font: 400 1.25rem/1.2 Karla, sans-serif; }.research-objectives-grid ul { margin: 0; padding-left: 1.3rem; font: 400 1.25rem/1.45 Karla, sans-serif; }
+@media (max-width: 700px) { .head-audience, .head-research { padding-top: 4.5rem; }.head-audience > .case-label, .head-research > .case-label { margin-bottom: 2.5rem; }.head-persona, .research-audience-cards, .research-methods-grid, .research-objectives-grid { grid-template-columns: 1fr; gap: 1rem; }.head-persona-image, .head-persona-card { min-height: auto; height: 25rem; }.head-persona-card { height: auto; padding: 3rem 2rem; }.head-persona-card h2 { margin-bottom: 2.5rem; }.research-audience-cards article, .research-method-card, .research-objectives-grid article { min-height: auto; padding: 2rem; } }
+
 /* Refined presentation for the HEAD Padel audience and research sections. */
 .head-audience > .case-label, .head-research > .case-label { display: flex; align-items: center; gap: 1.25rem; }
 .head-audience > .case-label::after, .head-research > .case-label::after { content: ""; width: min(16vw, 14rem); height: .3rem; border-radius: 999px; background: #2376bc; }
@@ -175,51 +200,3 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .research-objectives-grid h2 { margin-bottom: 2rem; color: #2376bc; font: 700 1.25rem/1.2 Montserrat, sans-serif; text-transform: uppercase; }
 .research-objectives-grid li + li { margin-top: .35rem; }
 @media (max-width: 700px) { .head-audience > .case-label::after, .head-research > .case-label::after { width: 3.5rem; }.head-persona { gap: 1.25rem; }.head-persona-image { box-shadow: .5rem .5rem 0 rgba(35, 118, 188, .12); }.head-persona-card dl div { grid-template-columns: 1fr; gap: .35rem; }.research-audience-cards, .research-methods-grid, .research-objectives-grid { gap: 1rem; }.research-methods-grid { margin-top: 1.5rem; }.research-objectives-grid { margin-top: 1rem; }.research-audience-cards article, .research-method-card, .research-objectives-grid article { border-radius: 1.1rem; } }
-
-/* ===== Copilot animations ===== */
-
-.case-section {
-  opacity: 0;
-  transform: translateY(24px);
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
-}
-
-.case-section.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Hero appears immediately */
-.case-hero {
-  opacity: 1;
-  transform: none;
-}
-
-/* Images */
-.case-image {
-  transition:
-    transform 0.45s ease,
-    box-shadow 0.45s ease;
-}
-
-.case-image:hover {
-  transform: translateY(-4px);
-}
-
-/* Cards */
-.co-benefit-card,
-.insight-card,
-.result-card {
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
-.co-benefit-card:hover,
-.insight-card:hover,
-.result-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
