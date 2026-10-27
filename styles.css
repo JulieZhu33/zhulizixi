@@ -131,7 +131,7 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .head-hero__copy { position: relative; z-index: 1; display: flex; min-height: 43.7rem; flex-direction: column; align-items: flex-start; }
 .head-brand-image { width: 9.375rem; height: 9.375rem; margin-bottom: auto; }
 .head-hero h1 { margin: 0; color: #2376bc; font: italic 700 clamp(5rem, 9vw, 8rem)/.92 Montserrat, sans-serif; letter-spacing: -.08em; }
-.head-hero__copy > p { max-width: 49.6rem; margin: 2.25rem 0 0; font: 400 clamp(1.35rem, 2vw, 2rem)/1 Karla, sans-serif; }
+.head-hero__copy > p { max-width: 49.6rem; margin: 2.25rem 0 0; font: 400 clamp(1.15rem, 1.5vw, 1.5rem)/1.15 Karla, sans-serif; }
 .head-hero-image { position: relative; z-index: 0; width: calc(100% + 12rem); height: 43.7rem; margin-left: -12rem; }
 .head-brief { padding-top: 4.5rem; }
 .head-brief > .case-label { margin-bottom: 4.5rem; }
@@ -148,14 +148,14 @@ h1 { font: 700 clamp(5rem, 11vw, 10rem)/.9 Montserrat, sans-serif; letter-spacin
 .head-touchpoints-image { height: min(53vw, 51.1rem); }
 .head-touchpoint-slots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem 4.75rem; margin-top: 3rem; }
 .head-touchpoint-slots .case-image { width: 100%; height: 9.3125rem; }
-@media (max-width: 700px) { .head-hero { grid-template-columns: 1fr; gap: 2rem; min-height: auto; }.head-hero__copy { min-height: auto; }.head-brand-image { margin-bottom: 5rem; }.head-hero h1 { font-size: clamp(4.5rem, 21vw, 7rem); }.head-hero__copy > p { font-size: 1.35rem; }.head-hero-image { width: 100%; height: 25rem; margin-left: 0; }.head-brief, .head-solution, .head-touchpoints { padding-top: 4.5rem; }.head-brief > .case-label, .head-solution > .case-label, .head-touchpoints > .case-label { margin-bottom: 2.5rem; }.head-market { margin-top: 4rem; }.head-strengths, .head-touchpoint-slots { grid-template-columns: 1fr; gap: 1rem; }.head-strengths article { min-height: 10rem; }.head-wide-image, .head-touchpoints-image { height: 25rem; }.head-touchpoint-slots .case-image { height: 10rem; } }
+@media (max-width: 700px) { .head-hero { grid-template-columns: 1fr; gap: 2rem; min-height: auto; }.head-hero__copy { min-height: auto; }.head-brand-image { margin-bottom: 5rem; }.head-hero h1 { font-size: clamp(4.5rem, 21vw, 7rem); }.head-hero__copy > p { font-size: 1.15rem; }.head-hero-image { width: 100%; height: 25rem; margin-left: 0; }.head-brief, .head-solution, .head-touchpoints { padding-top: 4.5rem; }.head-brief > .case-label, .head-solution > .case-label, .head-touchpoints > .case-label { margin-bottom: 2.5rem; }.head-market { margin-top: 4rem; }.head-strengths, .head-touchpoint-slots { grid-template-columns: 1fr; gap: 1rem; }.head-strengths article { min-height: 10rem; }.head-wide-image, .head-touchpoints-image { height: 25rem; }.head-touchpoint-slots .case-image { height: 10rem; } }
 
 /* Keep the MyCheckout project title over the top edge of its hero image. */
 .case-hero__copy { position: relative; align-self: stretch; display: flex; flex-direction: column; justify-content: flex-end; }
-.case-hero__copy h1 { position: absolute; z-index: 2; top: 0; left: calc(100% + 4rem); white-space: nowrap; }
+.case-hero__copy h1 { position: static; z-index: auto; margin: 0; white-space: normal; font-size: clamp(3.75rem, 7vw, 6.5rem); }
 .case-hero__copy .case-kicker { margin-top: auto; }
-.case-hero .case-image--hero { position: relative; z-index: 0; }
-@media (max-width: 700px) { .case-hero__copy { display: block; align-self: auto; }.case-hero__copy h1 { position: static; margin: 0; white-space: normal; }.case-hero__copy .case-kicker { margin-top: 0; } }
+.case-hero .case-image--hero { position: relative; z-index: 0; width: calc(100% + 4rem); }
+@media (max-width: 700px) { .case-hero__copy { display: block; align-self: auto; }.case-hero__copy h1 { position: static; margin: 0; white-space: normal; }.case-hero__copy .case-kicker { margin-top: 0; }.case-hero .case-image--hero { width: 100%; } }
 
 /* HEAD Padel — Targeting Audience and Research Methods */
 .head-audience, .head-research { padding-top: 5.1rem; }
